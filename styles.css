@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+h3, h4 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.header {
+  padding: 15px;
+  text-align: center;
+  background-color: #72b7cc;
+  width: 100%;
+  color: white;
+}
+
+#spinner{
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 5px solid #f3f3f3;
+  border-top:3px solid #7fc1d4;
+  border-radius: 100%;
+
+  position: absolute;
+  top:100px;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
+  }
+}
+
+#spinner.show {
+  visibility: visible;
+}
+
+#catSpinner{
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 5px solid #f3f3f3;
+  border-top:3px solid #7fc1d4;
+  border-radius: 100%;
+
+  position: absolute;
+  top:150px;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
+  }
+}
+
+#catSpinner.show {
+  visibility: visible;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #e6e6e6;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.divider {
+  height: 20px;
+}
+
+.footer {
+  width: 100% !important;
+  text-align: center;
+  background-color: #c9c9c9;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.next-page a {
+  background-color: #d5d5d5;
+  padding: 10px;
+}
+
+.next-page .button {
+  margin-top: 40px;
+}
+
+#catButtonSubmit,
+#buttonSubmit {
+  background-color: #d5d5d5;
+  padding: 10px;
+  border: none;
+}
+
+#catButtonSubmit:hover,
+#buttonSubmit:hover {
+  color: #757575;
+}
+
+#catButtonSubmit:active,
+#buttonSubmit:active {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #757575;
+  text-decoration: none;
+}
+
+p a {
+  color: blue;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .header {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .next-page {
+    width: 100%;
+  }
+
+  .page {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+}
