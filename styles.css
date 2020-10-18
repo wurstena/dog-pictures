@@ -35,11 +35,9 @@ h3, h4 {
   border-top:3px solid #7fc1d4;
   border-radius: 100%;
 
-  position: absolute;
-  top:610px;
-  bottom:0;
-  left:0;
-  right: 0;
+  position: fixed;
+  top:45%;
+  left:auto;
   margin: auto;
 
   animation: spin 1s infinite linear;
@@ -66,11 +64,9 @@ h3, h4 {
   border-top:3px solid #7fc1d4;
   border-radius: 100%;
 
-  position: absolute;
-  top:610px;
-  bottom:0;
-  left:0;
-  right: 0;
+  position: fixed;
+  top:45%;
+  left:auto;
   margin: auto;
 
   animation: spin 1s infinite linear;
@@ -179,14 +175,4 @@ p {
     margin-left: 50px;
   }
 
-  #spinner, #catSpinner {
-    top: 300px;
-  }
-
-}
-
-@media only screen and (max-width: 961px) {
-  #spinner, #catSpinner {
-
-  }
 }
