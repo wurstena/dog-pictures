@@ -179,4 +179,8 @@ p {
     margin-left: 50px;
   }
 
+  #spinner, #catSpinner {
+    top: 350px;
+  }
+
 }
